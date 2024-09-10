@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container" id="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Nome:</label>
+      <input type="text" id="username" required>
+      
+      <label for="password">Senha:</label>
+      <input type="password" id="password" required>
+      
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div class="user-info" id="user-info" style="display: none;">
+    <div class="profile-area">
+      <div class="profile-circle" id="profile-circle">
+        <img id="user-pic" src="default-profile.png" alt="Foto do Usuário">
+      </div>
+      <span id="user-name"></span>
+    </div>
+    
+    <div class="upload-photo" id="upload-photo">
+      <label for="photo">Selecione uma foto:</label>
+      <input type="file" id="photo" accept="image/*">
+      <button id="save-photo">Salvar Foto</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
